@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex; /* Align icons and button in a row */
+    justify-content: center; /* Center the icons and button */
+    margin: 20px 0; /* Space above and below the icons */
+}
+
+.social-button {
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center icon vertically */
+    background-color: #333; /* Background color for buttons */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 0 10px; /* Space between buttons */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.social-button:hover {
+    background-color: beige; /* Change background on hover */
+    color: #222; /* Change text color on hover */
+}
+
+/* Main Blog Container */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px; /* Reduced padding to avoid excessive space */
+    flex: 1; /* Allow the blog container to grow and take available space */
+    margin-bottom: 0; /* Remove any bottom margin */
+}
+
+/* Blog Card */
+.blog-card {
+    background-color: #333;
+    border-radius: 8px; /* Slightly reduced border radius */
+    margin: 10px; /* Reduced margin to remove unnecessary space */
+    overflow: hidden;
+    width: 300px; /* Set a fixed width for the cards */
+    height: 330px; /* Set a fixed height for shorter rectangular shape */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Lighter shadow for a cleaner look */
+    transition: transform 0.3s;
+}
+
+
+.blog-card:hover {
+    transform: translateY(-3px); /* Slightly reduce hover effect */
+}
+
+/* Image in Card */
+.blog-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Blog Post Title */
+.blog-card h2 {
+    font-size: 18px; /* Reduced font size */
+    margin: 10px; /* Adjusted margin */
+}
+
+/* Blog Post Description */
+.blog-card p {
+    margin: 0 5px 5px 5px; /* Reduced margin for cleaner spacing */
+    font-size: 14px; /* Reduced font size for better fit */
+}
+
+/* Read More Button */
+.read-more {
+    display: block;
+    text-align: center;
+    padding: 8px; /* Reduced padding */
+    margin: 0 10px 15px 10px; /* Adjusted margin for bottom space */
+    background-color: beige;
+    color: #222;
+    text-decoration: none;
+    border-radius: 4px; /* Slightly reduced border radius */
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
