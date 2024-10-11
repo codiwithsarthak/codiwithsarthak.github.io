@@ -61,11 +61,17 @@ body:before {
     margin-top: 20px; /* Space above the buttons */
 }
 
+/* Button Reset */
+button {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 /* Email and Blogs Buttons */
 .email-button button,
 .blogs-button button {
     padding: 10px 20px;
     font-size: 18px;
+    width: 150px; /* Set a specific width */
     background: none;
     border: 2px solid beige;
     color: #fff;
